@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            background-color: aquamarine;
+            height: 500px;
+            width:500px;
+            border-radius: 10%;
+            transition: 2s;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width:1440px){
+            .box1{
+                background-color: green;
+                height: 450px;
+                width:450px;
+                transition: 2s;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width:1024px){
+            .box1{
+                background-color: rgb(186, 91, 72);
+                height: 300px;
+                width:300px;
+                transition: 2s;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width:768px){
+            .box1{
+                background-color: red;
+                height: 250px;
+                width:250px;
+                transition: 2s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 box"></div>
+</body>
+</html>
