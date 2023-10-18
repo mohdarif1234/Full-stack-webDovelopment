@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+    transition: 0.5s;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+nav{
+    margin: 20px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+img[alt = "menu"]{
+    width: 25px;
+    display: none;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+}
+
+.intro-line-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.intro-line-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.intro-line-2 h1{
+    font-size: 60px;
+}
+
+.intro-line-2 h2{
+    font-size: 35px;
+    color: rgb(197, 197, 89);;
+}
+
+img[alt = "hello"]{
+    width: 70px;
+}
+
+img[alt = "pc-image"]{
+    width: 30vw;
+}
+
+.main-section{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-section div h1{
+    font-size: 40px;
+}
+
+.horizontal-divider{   
+        height: 10px;
+        width: 135px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+}
+.project-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px; 
+    }
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    img[alt = "project-image"]{
+        width: 20vw;
+    }
+
+    .contect{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px;
+        gap: 15px;
+    }
+
+    .contect div h1{
+        font-size: 40px
+    }
+
+    .contect-me-horizontal-driver{
+        height: 10px;
+        width: 200px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contect-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    img[alt = "social"]{
+        width: 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+        nav ul{
+            display: none;
+        }
+
+        img[alt = "menu"]{
+            display: block;
+        }
+
+        .intro{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .intro-line-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:10px ;
+            font-size:20px ;
+        }
+        .intro-line-2{
+            align-items: center;
+        }
+        .intro-line-2 h1{
+            font-size: 40px;
+        }
+        .intro-line-2 h2{
+            font-size: 25px;
+            text-align: center;
+        }
+
+        img[alt = "pc-image"]{
+            width: 60vw;
+        }
+
+        .project-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        img[alt = "project-image"]{
+            width: 55vw;
+        }
+
+        .main-section div h1{
+            font-size: 35px;
+        }
+
+        .contect div h1{
+            font-size: 35px;
+        }
+
+        .contect-me-horizontal-driver{
+            height: 10px;
+            width: 180px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+
